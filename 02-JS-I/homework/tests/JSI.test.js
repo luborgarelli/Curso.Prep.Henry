@@ -38,44 +38,78 @@ const {
 describe('nuevaString', function() {
   it('Deberia ser un string', function() {
     expect(typeof nuevaString).toBe('string');
-  });
+  }); 
+  function lognuevaString () {
+    console.log ('luciana');
+  }
 });
 
 describe('nuevoNum', function() {
   it('Deberia ser un numero', function() {
     expect(typeof nuevoNum).toBe('number');
   });
+  function lognuevoNum () {
+    console.log (4)
+  }  
+
 });
 
 describe('nuevoBool', function() {
   it('Deberia ser un booleano', function() {
     expect(typeof nuevoBool).toBe('boolean');
   });
-});
+}); 
+function puedeManejar(edad) {
+  if (edad > 18) {
+      return true;
+  }
+
+  return false;
+}
 
 describe('nuevaResta', function() {
   it('Deberia ser un booleano', function() {
     expect(nuevaResta).toBe(true);
   });
 });
+function logrestarDosNumeros (x , y){
+  var diferencia = x , y;
+  return diferencia
+}
 
 describe('nuevaMultiplicacion', function() {
   it('Deberia ser un booleano', function() {
     expect(nuevaMultiplicacion).toBe(true);
   });
 });
+function lognuevaMultiplicacion (x , y){
+  var producto = x * y;
+  return producto
+} 
+
 
 describe('nuevoModulo', function() {
   it('Deberia ser un booleano', function() {
     expect(nuevoModulo).toBe(true);
-  });
+  });  
+  function lognuevoModulo (x , y){
+  var modulo = x % y;
+  return resto
+} 
+  
 });
+
 
 describe('devolverString(str)', function() {
   it('Deberia devolver el string provisto', function() {
     let string = 'Henry';
     expect(devolverString(string)).toBe(string);
   });
+  function logdevolverString (str){
+    var devolverString = "Henry";
+    return "Henry"
+  }
+
 });
 
 describe('suma(x, y)', function() {
@@ -83,6 +117,14 @@ describe('suma(x, y)', function() {
     expect(suma(5, 5)).toBe(10);
     expect(suma(-1, 5)).toBe(4);
   });
+  function logsumarDosNumeros (x , y){
+  var suma = 5 + 5;
+  return 10
+  }
+  function logSumarDosNumeros (j , k){
+    var suma = -1 + 5
+    return 4
+  }
 });
 
 describe('resta(x, y)', function() {
@@ -92,6 +134,23 @@ describe('resta(x, y)', function() {
     expect(resta(5, -5)).toBe(10);
     expect(resta(0, 0)).toBe(0);
   });
+  function logresta (x , y){
+    var resta = 5 - 5;
+    return 0
+  
+   var resta = -1 - 5;
+  return 4
+
+  var resta = -1 - 5
+  return -6
+
+  var resta = 5 - -5
+  return 10
+
+  var resta = 0 - 0
+  return 0
+  }
+
 });
 
 describe('divide(x, y)', function() {
@@ -100,6 +159,8 @@ describe('divide(x, y)', function() {
     expect(divide(10, 5)).toBe(2);
     expect(divide(11, 2)).toBe(5.5);
   });
+  
+
 });
 
 describe('multiplica(x, y)', function() {
@@ -108,6 +169,12 @@ describe('multiplica(x, y)', function() {
     expect(multiplica(10, -5)).toBe(-50);
     expect(multiplica(11, 0)).toBe(0);
   });
+  function logmultiplicaDosNum (x , y){
+    var multiplicacion = 5 * 5;
+    return 25
+  }
+
+
 });
 
 

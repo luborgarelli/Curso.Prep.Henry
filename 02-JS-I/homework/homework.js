@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código: 
-  return str;
+  return str ;
     
 }
 
@@ -240,7 +240,7 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra.length > 1){
+   if(letra.length > 1){
     return "Dato incorrecto"
   }
   if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
